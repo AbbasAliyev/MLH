@@ -34,10 +34,10 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             const label = $$(sel.label)[3].isDisplayed();
             expect(label).toEqual(true);
         });
-        it('TC-005.005 Label for story', function () {
-            const label = $(sel.image).isDisplayed();
-            expect(label).toEqual(true);
-        });
+        // it('TC-005.005 Label for story', function () {
+        //     const label = $(sel.image).isDisplayed();
+        //     expect(label).toEqual(true);
+        // });
 
     });
     describe('Labels are correct', function () {
@@ -60,11 +60,6 @@ describe('My Little Hero', function () { //define suite title by passing a strin
         it('TC-009 Label for story = 4. What type of story would you like to read?', function () {
             const text = $$(sel.label)[3].getAttribute('title');
             expect(text).toEqual(exp.labelStory);
-        });
-
-        it('TC-010 Label for image = 5. Upload an image (optional).', function () {
-            const text = $(sel.image).getAttribute('title');
-            expect(text).toEqual(exp.labelImage);
         });
     });
 
